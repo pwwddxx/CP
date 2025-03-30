@@ -13,7 +13,7 @@ using namespace std;
 #define Pi atan(1) * 4
 
 void runcase(){
-  //test 2 for github  
+  
 }
 
 int main() {
@@ -23,5 +23,4 @@ int main() {
   while(t--) runcase();
   return 0;
 }
-
 
