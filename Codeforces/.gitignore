@@ -1,0 +1,7 @@
+# Ignore all executable files
+*.out
+*.exe
+*.o
+*.a
+
+oneForAll
