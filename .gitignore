@@ -1,7 +1,8 @@
-# Ignore all executable files
-*.out
-*.exe
+# Ignore specific C++ files
+oneForAll.cpp
+oneForAll      # The compiled executable
+
+# Standard C++ ignores
 *.o
 *.a
-
-oneForAll
+*.out
