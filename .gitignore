@@ -1,8 +1,4 @@
-# Ignore specific C++ files
-oneForAll.cpp
-oneForAll      # The compiled executable
-
-# Standard C++ ignores
-*.o
-*.a
-*.out
+*  
+!*.cpp  
+!*.py  
+!*.java  
