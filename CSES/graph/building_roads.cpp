@@ -13,11 +13,11 @@ using namespace std;
 #define Pi atan(1) * 4
 
 
-int dfs(int node, int vis[], vector<int> edges[], vector<int> &ans){
-  vis[node] = 1;
+int dfs(int node, int viss[], vector<int> edges[], vector<int> &ans){
+  viss[node] = 1;
   for(auto it : edges[node]){
-    if(!vis[it]){
-      dfs(it, vis, edges, ans);
+    if(!viss[it]){
+      dfs(it, viss, edges, ans);
     }
   }
   return node;
@@ -28,7 +28,7 @@ void runcase() {
   cin >> n >> m;
   vector<int> edges[n + 1];
   vector<int> ans;
-  int vis[n + 1] = {0};
+  int viss[n+1] = {0};
 
   for(int i = 0; i < m; i++){
     int u, v;
@@ -39,8 +39,8 @@ void runcase() {
 
   int cnt = 0;
   for(int i = 1; i <= n; i++){
-    if(!vis[i]){
-      int lastN = dfs(i, vis, edges, ans);
+    if(!viss[i]){
+      int lastN = dfs(i, viss, edges, ans);
       ans.pb(lastN);
       cnt++;
     }
