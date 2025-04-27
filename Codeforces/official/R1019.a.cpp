@@ -2,11 +2,17 @@
 using namespace std;
 
 #define ll long long
-#define ld long double
 #define Pi atan(1) * 4
 
 void runcase() {
-
+  int n; cin >> n;
+  int co = 0;
+  set<int> st;
+  for(int i = 0, x; i < n; i++) {
+    cin >> x;
+    st.insert(x);
+  }
+  cout << st.size() << '\n';
 }
 
 int main() {
@@ -16,3 +22,4 @@ int main() {
   while (t--) runcase();
   return 0;
 }
+

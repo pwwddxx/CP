@@ -13,40 +13,9 @@ using namespace std;
 #define Pi atan(1) * 4
 
 void runcase() {
-  int n, k;
-  cin >> n >> k;
-  int ar[n];
-  inArray(ar);
-  // sort(ar,ar+n);
-  if(n == k){
-    if(count(ar, ar+n, 0) == n){
-      cout << "1\n";
-    }
-    else{
-      cout << "0\n";
-    }
-  } 
-  else {
-    if(count(ar, ar+n, 0) == 0){
-      cout << "0\n";
-    }
-    else if(k == 1){
-    unordered_set<int> seen(ar, ar+n);
-    int missing = 1;
-    while (seen.count(missing)) {
-        missing++;
-    }
-    cout << missing << '\n';
-    }
-    else{
-      if(ar[0] == 0 || ar[n-1] == 0){
-        cout << "1\n";
-      }
-      else{
-      cout << *max_element(ar,ar+n) + 1 << '\n';
-      }
-    }
-  }
+  string a,b,c;
+  cin >> a >> b >> c;
+  cout << a[0] << b[0] << c[0] << '\n';
 }
 
 int main() {
