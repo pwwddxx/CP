@@ -25,6 +25,12 @@ void dbg2(int32_t array[], int32_t n) {
   cerr << '\n';
 }
 
+int drowf[8] = {-1, -1, 0, 1, 1, 1, 0, -1};
+int dcolf[8] = {0, 1, 1, 1, 0, -1, -1, -1};
+
+int drowh[4] = {-1, 0, 1, 0};
+int dcolh[4] = {0, 1, 0, -1};
+
 #define ll long long
 #define ld long double
 #define Pi atan(1) * 4
